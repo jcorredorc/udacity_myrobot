@@ -2,12 +2,12 @@
 
 <launch>
 <!-- Robot pose -->
-  <arg name="x" default="1.71"/>
-  <arg name="y" default="0.30"/>
-  <arg name="z" default="0.01"/>
-  <arg name="roll" default="0"/>
-  <arg name="pitch" default="0"/>
-  <arg name="yaw" default="0"/>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.0"/>
+  <arg name="roll" default="0.0"/>
+  <arg name="pitch" default="0.0"/>
+  <arg name="yaw" default="0.0"/>
 
   <!-- Launch other relevant files-->
   <include file="$(find my_robot)/launch/robot_description.launch"/>
@@ -15,8 +15,10 @@
   <!-- World File -->
   <!--   
     <arg name="world_file" default="$(find my_robot)/worlds/world_project.world"/>
+<arg name="world_file" default="$(find my_robot)/worlds/world_white_ball.world"/>
+<arg name="world_file" default="$(find my_robot)/worlds/myworld.world"/>
   -->
-  <arg name="world_file" default="$(find my_robot)/worlds/world_white_ball.world"/>
+  <arg name="world_file" default="$(find my_robot)/worlds/localization_map.world"/>
 
   <!-- Launch Gazebo World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -37,7 +39,6 @@
 
  <!--launch rviz-->
   <node name="rviz" pkg="rviz" type="rviz" respawn="false" 
-  args="-d $(find my_robot)/config/config.rviz">
+  args="-d $(find my_robot)/config/map_amcl.rviz">
   </node>
-
 </launch>
