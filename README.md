@@ -34,5 +34,8 @@ Now you could run the teleop script to test the localization via amcl package
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-Or you can use the 2D Navigation Goal from Rviz
+Or you can use the 2D Navigation Goal tool from Rviz
+
+
+![GitHub Logo](/images/xdp_imagenUdacity_proj3.jpg)
 
