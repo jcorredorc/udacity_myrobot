@@ -4,6 +4,8 @@ This repo contains the autor's solution to the projects proposed in the course [
 
 ## Installation
 
+### Project 4. Where I Am
+
 Make sure you have the following packages installed
 
 ```
@@ -17,11 +19,12 @@ Clone the repositories and build it in your workspace folder /src
 
 ```
 git clone https://github.com/ros-teleop/teleop_twist_keyboard
-git clone https://github.com/jcorredorc/udacity_myrobot.git
+git clone --depth 1 --branch Prj4.WhereIAm https://github.com/jcorredorc/udacity_myrobot.git
 ```
 
 ## Usage
 
+### Project 4. Where I Am
 
 ```
 roslaunch my_robot world.launch
