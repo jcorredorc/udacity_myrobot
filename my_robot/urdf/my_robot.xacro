@@ -200,6 +200,7 @@
                 iyy="1e-6" iyz="0.0" 
                 izz="1e-6"/>
     </inertial>
+
     <visual name="camera_visual">
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
@@ -207,6 +208,7 @@
       </geometry>
       <material name="green"/>
     </visual>
+
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
@@ -216,11 +218,12 @@
   </link>
 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="0.2 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.15 0 ${2*box_z}" rpy="0.0 0.0 0.0"/>
     <parent link="robot_footprint"/>
     <child link="camera"/>
     <axis xyz="0.0 1 0.0"/>
   </joint>
+
 
   <link name="hokuyo">
   <pose> 0 0 0 0 0 0 </pose>
@@ -252,5 +255,15 @@
     <axis xyz="0.0 1.0 0.0"/>
   </joint>
 
+<!--Optical camera RGBD -->
 
+<joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+  <link name="camera_link_optical">
+  </link>
+ 
 </robot>
