@@ -1461,10 +1461,10 @@
       <pose frame=''>6.14787 1.02339 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>5977 528000000</sim_time>
-      <real_time>289 857950862</real_time>
-      <wall_time>1627399725 132705312</wall_time>
-      <iterations>280294</iterations>
+      <sim_time>5949 527000000</sim_time>
+      <real_time>261 306568881</real_time>
+      <wall_time>1627399696 581323657</wall_time>
+      <iterations>252293</iterations>
       <model name='Construction Cone'>
         <pose frame=''>5.18918 4.63546 -4e-06 4e-06 -1e-06 0</pose>
         <scale>1 1 1</scale>
@@ -1777,7 +1777,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>1.10103 1.04973 15.1496 0 1.5698 0.000545</pose>
+        <pose frame=''>-10.6936 2.27904 9.25211 -0 0.389797 -0.295456</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
